@@ -3,7 +3,10 @@ import axios from "axios";
 import { Routes, Route } from "react-router-dom";
 import Coins from "./components/Coins";
 import Coin from "./routes/Coin";
+import Test from "./components/test";
 import Navbar from "./components/Navbar";
+import Converter from "./Controller/Converter";
+import Header from "./Controller/Header";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -26,6 +29,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <Header />
+      <Converter />
+
       <Routes>
         <Route path="/" element={<Coins coins={coins} />} />
         <Route path="/coin" element={<Coin />}>
