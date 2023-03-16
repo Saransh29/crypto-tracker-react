@@ -29,10 +29,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header />
-      <Converter />
+      {/* <Header />
+      <Converter /> */}
 
       <Routes>
+        {/* <Route path="/" element={<Header />} />
+        <Route path="/" element={<Converter />} /> */}
         <Route path="/" element={<Coins coins={coins} />} />
         <Route path="/coin" element={<Coin />}>
           <Route path=":coinId" element={<Coin />} />

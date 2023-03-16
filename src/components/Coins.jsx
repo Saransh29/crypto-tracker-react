@@ -4,10 +4,14 @@ import Coin from "../routes/Coin";
 import { Link } from "react-router-dom";
 
 import "./Coins.css";
+import Header from "../Controller/Header";
+import Converter from "../Controller/Converter";
 
 const Coins = (props) => {
   return (
     <div className="container">
+      <Header />
+      <Converter />
       <div>
         <div className="heading">
           <p>#</p>
